@@ -101,9 +101,7 @@ function allOpenBracketsClosed (string) {
 
     idxOfLastClosedBracket = string.indexOf(")", idxOfLastOpenBracket + 1);
 
-    if (idxOfLastClosedBracket === -1) {
-      noBracketsLeftOpen = false;
-    }
+    if (idxOfLastClosedBracket === -1) noBracketsLeftOpen = false;
 
   } while (idxOfLastOpenBracket !== -1);
 
